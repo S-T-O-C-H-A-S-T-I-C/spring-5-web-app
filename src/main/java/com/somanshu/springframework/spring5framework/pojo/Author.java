@@ -1,8 +1,7 @@
-package com.somanshu.springframework.pojo;
+package com.somanshu.springframework.spring5framework.pojo;
 
 import javax.persistence.*;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -20,7 +19,7 @@ public class Author {
     public Author () {
     }
 
-    public Author(String firstName, String secondName, Set<Book> books) {
+    public Author(final String firstName, String secondName, Set<Book> books) {
         this.firstName = firstName;
         this.secondName = secondName;
         this.books = books;
